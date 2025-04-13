@@ -4,14 +4,14 @@
 //  It must be written inside the middle curly braces.
 //  It always stored as a string.
 
-var obj={
-    name:"Rohit Sharma",
-    play:"Cricket",
-    age:43
-}
-// console.log(obj.name);
-// console.log("Plays");          // Basic methods
-// console.log(obj.play);
+var obj = {
+        name: "Rohit Sharma",
+        play: "Cricket",
+        age: 43
+    }
+    // console.log(obj.name);
+    // console.log("Plays");          // Basic methods
+    // console.log(obj.play);
 
 // console.log(obj['name']);
 // console.log("Plays");
@@ -21,3 +21,15 @@ var obj={
 // Object.values(obj).forEach(v => console.log(v));        //new one
 
 Object.entries(obj).forEach(([k, v]) => console.log(`${k}: ${v}`));
+
+// Freece method
+
+var obj = {
+    name: "mohan",
+    age: 25,
+    city: "Patna"
+};
+Object.freeze(obj);
+Object.entries(obj).forEach(([k, v]) => console.log(`${k}: ${v}`));
+
+console.log(obj.age = 30); // it return 30 as new age
